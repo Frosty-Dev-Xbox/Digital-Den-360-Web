@@ -1,1 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jail X360 — The Homebrew Store for Jailbroken Xbox 360s</title>
+<meta name="description" content="Jail X360 is the homebrew store for jailbroken Xbox 360 consoles. Download games, emulators, utilities, and themes directly to your console. RGH | JTAG | BadUpdate." />
+<meta name="theme-color" content="#0A0A0A" />
 
+<!-- Open Graph -->
+<meta property="og:title" content="Jail X360 — Break free. Play more." />
+<meta property="og:description" content="The homebrew store for jailbroken Xbox 360s. Games, emulators, utilities — all in one place." />
+<meta property="og:image" content="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<meta property="og:type" content="website" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          jailblack: '#0A0A0A',
+          jailgreen: '#107C10',
+          jailorange: '#FF6B00',
+          jailgray: '#1A1A1A',
+        },
+        fontFamily: {
+          mono: ['"Fira Code"', 'monospace'],
+          sans: ['Inter', 'sans-serif'],
+        },
+      },
+    },
+  };
+</script>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-jailblack text-white font-sans overflow-x-hidden">
+
+<!-- ═══════════════ ANIMATED BACKGROUND ═══════════════ -->
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+
+<!-- ═══════════════ NAVBAR ═══════════════ -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
+      <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/features.html">Features</a></li>
+      <li><a href="pages/compatibility.html">Compatibility</a></li>
+      <li><a href="pages/roadmap.html">Roadmap</a></li>
+      <li><a href="pages/gallery.html">Gallery</a></li>
+      <li><a href="pages/faq.html">FAQ</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+
+    <a href="pages/downloads.html" class="nav-cta">
+      <span>Coming Soon</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════ HERO ═══════════════ -->
+<section class="hero">
+  <div class="hero-badge">
+    <span class="pulse-dot"></span>
+    <span>Paid Beta Soon → Free Release</span>
+  </div>
+
+  <div class="hero-logo-wrap">
+    <div class="hero-logo-glow"></div>
+    <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360 Logo" class="hero-logo" />
+  </div>
+
+  <h1 class="hero-title">
+    <span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span>
+  </h1>
+
+  <p class="hero-tagline">
+    <span class="text-jailgreen">Break free.</span> <span class="text-jailorange">Play more.</span>
+  </p>
+
+  <div class="hero-typing">
+    <span id="typingText"></span><span class="cursor">|</span>
+  </div>
+
+  <p class="hero-desc">
+    The homebrew store for jailbroken Xbox 360 consoles. Browse and download
+    <strong class="text-jailgreen">games</strong>, <strong class="text-jailorange">emulators</strong>,
+    <strong class="text-jailgreen">utilities</strong>, and <strong class="text-jailorange">themes</strong>
+    directly to your console — no PC required.
+  </p>
+
+  <div class="hero-cta">
+    <a href="pages/roadmap.html" class="btn btn-primary">
+      <span>View Roadmap</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-ghost">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+      <span>View on GitHub</span>
+    </a>
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══════════════ STATUS STRIP ═══════════════ -->
+<section class="status-strip reveal">
+  <div class="status-item">
+    <div class="status-dot text-jailgreen"></div>
+    <span><strong class="text-jailgreen">RGH</strong> Supported</span>
+  </div>
+  <div class="status-item">
+    <div class="status-dot text-jailgreen"></div>
+    <span><strong class="text-jailgreen">JTAG</strong> Supported</span>
+  </div>
+  <div class="status-item">
+    <div class="status-dot text-jailorange"></div>
+    <span><strong class="text-jailorange">BadUpdate</strong> Partial</span>
+  </div>
+  <div class="status-item">
+    <div class="status-dot text-jailgreen"></div>
+    <span><strong class="text-jailgreen">Aurora</strong> Ready</span>
+  </div>
+</section>
+
+<!-- ═══════════════ NOT LIVE YET ═══════════════ -->
+<section class="notlive reveal">
+  <div class="notlive-card">
+    <div class="notlive-icon">⚠️</div>
+    <div>
+      <h3>Not Live Yet</h3>
+      <p>Jail X360 is currently in development. No downloads are available at this time.
+      Star the repo to get notified the moment the beta drops.</p>
+    </div>
+    <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-small">
+      ⭐ Star the Repo
+    </a>
+  </div>
+</section>
+
+<!-- ═══════════════ FEATURES ═══════════════ -->
+<section class="section reveal" id="features">
+  <div class="section-head">
+    <span class="section-label">Features</span>
+    <h2>Everything in <span class="text-jailgreen">one</span> <span class="text-jailorange">store</span></h2>
+    <p>Built for the homebrew community, by the homebrew community.</p>
+  </div>
+
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎮</div>
+      <h3>Games</h3>
+      <p>Homebrew games built for the Xbox 360 — shooters, platformers, fighters, and more.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon">🕹️</div>
+      <h3>Emulators</h3>
+      <p>Retro consoles on your 360. NES, SNES, Genesis, N64, and more.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon">🛠️</div>
+      <h3>Utilities</h3>
+      <p>Dashboards, tools, patches, and everything you need to keep your 360 running smooth.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎨</div>
+      <h3>Themes</h3>
+      <p>Custom dashboard skins to give your console a fresh look.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon">📦</div>
+      <h3>One-Click Install</h3>
+      <p>Downloads install straight to your console. No PC, no USB, no hassle.</p>
+    </div>
+
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔄</div>
+      <h3>Auto-Updates</h3>
+      <p>The manifest stays fresh. New content lands in your store automatically.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ HOW IT WORKS ═══════════════ -->
+<section class="section reveal" id="how">
+  <div class="section-head">
+    <span class="section-label">How It Works</span>
+    <h2>From <span class="text-jailorange">zero</span> to <span class="text-jailgreen">playing</span> in minutes</h2>
+  </div>
+
+  <div class="steps">
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <h3>Add the Manifest</h3>
+      <p>Drop the Jail X360 manifest URL into your Aurora dashboard.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <h3>Launch the Store</h3>
+      <p>Open Jail X360 from your scripts menu on the console.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <h3>Browse & Download</h3>
+      <p>Pick your game, emulator, or tool — it installs straight to your console.</p>
+    </div>
+    <div class="step-arrow">→</div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <h3>Play</h3>
+      <p>No PC required. Just pure homebrew on your 360.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ ROADMAP PREVIEW ═══════════════ -->
+<section class="section reveal" id="roadmap">
+  <div class="section-head">
+    <span class="section-label">Roadmap</span>
+    <h2>The road to <span class="text-jailorange">launch</span></h2>
+  </div>
+
+  <div class="roadmap-preview">
+    <div class="phase active reveal">
+      <div class="phase-badge">Phase 1</div>
+      <h3>🛠️ Development</h3>
+      <p>Building the store, script, and manifest system.</p>
+      <div class="phase-status in-progress">In Progress</div>
+    </div>
+    <div class="phase reveal">
+      <div class="phase-badge">Phase 2</div>
+      <h3>🔒 Paid Beta</h3>
+      <p>Early supporters get first access to the store.</p>
+      <div class="phase-status soon">Soon</div>
+    </div>
+    <div class="phase reveal">
+      <div class="phase-badge">Phase 3</div>
+      <h3>🆓 Free Release</h3>
+      <p>Everyone gets in. Homebrew for all.</p>
+      <div class="phase-status planned">Planned</div>
+    </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="pages/roadmap.html" class="btn btn-ghost">View Full Roadmap →</a>
+  </div>
+</section>
+
+<!-- ═══════════════ COMPATIBILITY PREVIEW ═══════════════ -->
+<section class="section reveal" id="compat">
+  <div class="section-head">
+    <span class="section-label">Compatibility</span>
+    <h2>Works with your <span class="text-jailgreen">setup</span></h2>
+  </div>
+
+  <div class="compat-preview">
+    <div class="compat-item reveal">
+      <span class="compat-name">RGH 1.2</span>
+      <span class="compat-status full">✅ Full</span>
+    </div>
+    <div class="compat-item reveal">
+      <span class="compat-name">RGH 3.0</span>
+      <span class="compat-status full">✅ Full</span>
+    </div>
+    <div class="compat-item reveal">
+      <span class="compat-name">JTAG</span>
+      <span class="compat-status full">✅ Full</span>
+    </div>
+    <div class="compat-item reveal">
+      <span class="compat-name">BadUpdate</span>
+      <span class="compat-status partial">⚠️ Partial</span>
+    </div>
+    <div class="compat-item reveal">
+      <span class="compat-name">Aurora 0.7b</span>
+      <span class="compat-status full">✅ Full</span>
+    </div>
+    <div class="compat-item reveal">
+      <span class="compat-name">FreeStyle Dash 3</span>
+      <span class="compat-status partial">⚠️ Partial</span>
+    </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="pages/compatibility.html" class="btn btn-ghost">Full Compatibility List →</a>
+  </div>
+</section>
+
+<!-- ═══════════════ GITHUB STATS ═══════════════ -->
+<section class="section reveal" id="stats">
+  <div class="section-head">
+    <span class="section-label">Community</span>
+    <h2>Join the <span class="text-jailorange">movement</span></h2>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card reveal">
+      <div class="stat-icon">⭐</div>
+      <div class="stat-value" id="statStars">—</div>
+      <div class="stat-label">Stars</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-icon">🍴</div>
+      <div class="stat-value" id="statForks">—</div>
+      <div class="stat-label">Forks</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-icon">👁️</div>
+      <div class="stat-value" id="statWatchers">—</div>
+      <div class="stat-label">Watchers</div>
+    </div>
+    <div class="stat-card reveal">
+      <div class="stat-icon">🐛</div>
+      <div class="stat-value" id="statIssues">—</div>
+      <div class="stat-label">Issues</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ CTA ═══════════════ -->
+<section class="cta-section reveal">
+  <div class="cta-card">
+    <h2>Ready to <span class="text-jailgreen">break free?</span></h2>
+    <p>Star the repo and be the first to know when Jail X360 goes live.</p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-primary">
+        ⭐ Star on GitHub
+      </a>
+      <a href="pages/contact.html" class="btn btn-ghost">
+        Join the Community
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════ FOOTER ═══════════════ -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
+      <div>
+        <div class="footer-title"><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></div>
+        <p class="footer-tag">Break free. Play more.</p>
+      </div>
+    </div>
+
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Store</h4>
+        <a href="pages/features.html">Features</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/downloads.html">Downloads</a>
+        <a href="pages/pricing.html">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="pages/compatibility.html">Compatibility</a>
+        <a href="pages/roadmap.html">Roadmap</a>
+        <a href="pages/changelog.html">Changelog</a>
+        <a href="pages/faq.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Project</h4>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/legal.html">Legal</a>
+        <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 Jail X360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-jailorange">Frosty-Dev-Xbox</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+                                                                            </html>
