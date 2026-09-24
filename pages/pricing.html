@@ -5,30 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Pricing — Digital Den 360</title>
 <meta name="description" content="Digital Den 360 pricing — Free, Beta Access, Premium Yearly, and Founder. One-time payments only." />
-<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="icon" type="image/png" href="../assets/homefront-xbox-360-17_orig.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
-      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#181818' },
+      fontFamily: { display:['Anton','Impact','sans-serif'], mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
 <link rel="stylesheet" href="../style.css" />
 </head>
 <body class="bg-ddblack text-white font-sans overflow-x-hidden">
-<div class="bg-grid"></div>
-<div class="bg-glow bg-glow-1"></div>
-<div class="bg-glow bg-glow-2"></div>
 
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-container">
     <a href="../index.html" class="nav-logo">
-      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="../assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -40,53 +37,51 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
+    <a href="pricing.html" class="nav-cta">Go Premium</a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
+<!-- HERO -->
+<section class="hero" style="min-height:70vh;background-image:url('../assets/1054.jpg');background-size:cover;background-position:center;">
   <div class="hero-badge"><span class="pulse-dot"></span><span>✦ One-Time Payments · £ GBP</span></div>
-  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Pri</span><span class="text-ddpink">cing</span></h1>
-  <p class="hero-desc">No subscriptions. No auto-renew. Pay once, keep your access.</p>
+  <h1 class="hero-title"><span class="text-ddpink-deep">Pric</span><span class="text-ddpink">ing</span></h1>
+  <p class="hero-tagline">Pay Once. Keep Access.</p>
+  <p class="hero-desc">No subscriptions. No auto-renew. Every tier is a single payment.</p>
 </section>
 
-<!-- MAIN TIERS -->
 <section class="section reveal">
   <div class="section-head">
     <span class="section-label">Tiers</span>
-    <h2>One-time <span class="text-ddpink">pricing</span></h2>
-    <p>Every tier is a single payment. No recurring charges. Ever.</p>
+    <h2>Choose Your <span class="text-ddpink">Tier</span></h2>
   </div>
 
-  <div class="premium-grid" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));max-width:1200px;">
+  <div class="premium-grid">
     <div class="premium-card reveal">
       <div class="premium-name">Free</div>
       <div class="premium-amount">£0</div>
-      <div class="premium-desc">Forever free · Available Phase 3</div>
+      <div class="premium-desc">Forever free · Phase 3</div>
       <ul class="premium-features">
         <li>Standard catalog</li>
         <li>Games, emulators, utilities</li>
         <li>Basic themes</li>
         <li>Auto-updates</li>
-        <li>Community submissions</li>
       </ul>
-      <div class="phase-status planned" style="display:inline-block;">Phase 3</div>
+      <div class="phase-status planned">Phase 3</div>
     </div>
 
     <div class="premium-card reveal">
       <div class="premium-name">Beta Access</div>
       <div class="premium-amount">£2.99 <span>/ beta</span></div>
-      <div class="premium-desc">Per beta cycle · Pay per release</div>
+      <div class="premium-desc">Per beta cycle · One-time</div>
       <ul class="premium-features">
-        <li>Everything in Free</li>
         <li>Access to that beta cycle</li>
         <li>Early content preview</li>
-        <li>Beta builds of the den script</li>
+        <li>Beta den builds</li>
         <li>Vote on next features</li>
         <li>Beta tester credit</li>
       </ul>
-      <div class="phase-status soon" style="display:inline-block;">Phase 2</div>
+      <div class="phase-status soon">Phase 2</div>
     </div>
 
     <div class="premium-card featured reveal">
@@ -107,10 +102,10 @@
         <li>Beta den builds</li>
         <li>Vote on next month's content</li>
       </ul>
-      <a href="#" class="btn btn-premium" style="width:100%;justify-content:center;">Get Premium →</a>
+      <a href="#" class="btn btn-premium">Get Premium →</a>
     </div>
 
-    <div class="premium-card reveal" style="border-color:rgba(255,215,0,0.5);">
+    <div class="premium-card reveal">
       <div class="premium-name">Founder</div>
       <div class="premium-amount">£24.99 <span>/ once</span></div>
       <div class="premium-desc">Lifetime · Limited to 100 spots</div>
@@ -125,19 +120,19 @@
         <li>Vote on core features</li>
         <li>All future content included</li>
       </ul>
-      <a href="#" class="btn btn-ghost" style="width:100%;justify-content:center;">Become a Founder →</a>
+      <a href="#" class="btn btn-ghost">Become a Founder →</a>
     </div>
   </div>
 </section>
 
-<!-- FULL COMPARISON -->
+<!-- COMPARISON -->
 <section class="section reveal">
   <div class="section-head">
     <span class="section-label">Compare</span>
-    <h2>Full <span class="text-ddpink">comparison</span></h2>
+    <h2>Full <span class="text-ddpink">Comparison</span></h2>
   </div>
 
-  <div class="compat-preview" style="max-width:1100px;">
+  <div class="compat-preview">
     <div class="compat-item"><span class="compat-name">Standard Catalog</span><span class="compat-status full">✅ Free+</span></div>
     <div class="compat-item"><span class="compat-name">Games Section</span><span class="compat-status full">✅ Free+</span></div>
     <div class="compat-item"><span class="compat-name">Emulators Section</span><span class="compat-status full">✅ Free+</span></div>
@@ -150,7 +145,6 @@
     <div class="compat-item"><span class="compat-name">Exclusive Premium Games</span><span class="compat-status full">✦ Premium+</span></div>
     <div class="compat-item"><span class="compat-name">Premium Theme Packs</span><span class="compat-status full">✦ Premium+</span></div>
     <div class="compat-item"><span class="compat-name">Priority Download Servers</span><span class="compat-status full">✦ Premium+</span></div>
-    <div class="compat-item"><span class="compat-name">Direct Download Queue</span><span class="compat-status full">✦ Premium+</span></div>
     <div class="compat-item"><span class="compat-name">Cloud Save Sync</span><span class="compat-status full">✦ Premium+</span></div>
     <div class="compat-item"><span class="compat-name">Hourly Manifest Refresh</span><span class="compat-status full">✦ Premium+</span></div>
     <div class="compat-item"><span class="compat-name">Vote on Monthly Content</span><span class="compat-status full">✦ Premium+</span></div>
@@ -169,18 +163,17 @@
 <section class="section reveal">
   <div class="section-head">
     <span class="section-label">Why Pay</span>
-    <h2>What your money <span class="text-ddpink">does</span></h2>
+    <h2>What Your Money <span class="text-ddpink">Does</span></h2>
   </div>
-
   <div class="features-grid">
-    <div class="feature-card reveal"><div class="feature-icon">🖥️</div><h3>Keeps Servers Running</h3><p>Priority download servers cost money — your payment keeps them fast.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🛠️</div><h3>Funds Development</h3><p>Time spent building, testing, and maintaining the den.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🎮</div><h3>Supports Homebrew Devs</h3><p>A portion goes directly to featured homebrew creators.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🖥️</div><h3>Servers</h3><p>Priority download servers cost money — your payment keeps them fast.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🛠️</div><h3>Development</h3><p>Time spent building, testing, and maintaining the den.</p></div>
+    <div class="feature-card reveal"><div class="feature-icon">🎮</div><h3>Homebrew Devs</h3><p>A portion goes directly to featured homebrew creators.</p></div>
     <div class="feature-card reveal"><div class="feature-icon">✦</div><h3>Exclusive Content</h3><p>Premium games and themes that never come to the free tier.</p></div>
   </div>
 </section>
 
-<!-- FAQ SNIPPET -->
+<!-- FAQ -->
 <section class="section reveal">
   <div class="section-head">
     <span class="section-label">Common Questions</span>
@@ -190,11 +183,11 @@
   <div class="faq-list">
     <div class="faq-item">
       <button class="faq-question">Is this a subscription?</button>
-      <div class="faq-answer"><p><strong>No.</strong> Every payment is one-time. There are no monthly charges, no auto-renew, and no hidden fees. Premium gives you 12 months of access for one payment — that's it.</p></div>
+      <div class="faq-answer"><p><strong>No.</strong> Every payment is one-time. No monthly charges, no auto-renew, no hidden fees. Premium gives 12 months access for one payment.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">What is Beta Access?</button>
-      <div class="faq-answer"><p>Beta Access is <strong>£2.99 per beta cycle</strong>. Each new beta release (Beta 1, Beta 2, Beta 3...) has its own access payment. You don't need to buy a beta if you'd rather wait for Premium or Free.</p></div>
+      <div class="faq-answer"><p>Beta Access is <strong>£2.99 per beta cycle</strong>. Each new beta release has its own access payment. You don't need to buy a beta if you'd rather wait for Premium or Free.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">How long does Premium last?</button>
@@ -202,7 +195,7 @@
     </div>
     <div class="faq-item">
       <button class="faq-question">Is Founder really lifetime?</button>
-      <div class="faq-answer"><p>Yes. Founder is <strong>£24.99 once</strong> — you keep access forever, plus Founder badge, name in credits, early dev builds, Founder Discord, and vote on core features. Limited to 100 spots.</p></div>
+      <div class="faq-answer"><p>Yes. Founder is <strong>£24.99 once</strong> — you keep access forever plus Founder badge, name in credits, early dev builds, Founder Discord, and vote on core features. Limited to 100 spots.</p></div>
     </div>
     <div class="faq-item">
       <button class="faq-question">What's the difference between Beta and Premium?</button>
@@ -217,10 +210,6 @@
       <div class="faq-answer"><p>Beta prices are locked in for those beta cycles. Founder pricing is locked in forever once you buy. Future Premium pricing may change — but only for new purchases.</p></div>
     </div>
     <div class="faq-item">
-      <button class="faq-question">What payment methods will you accept?</button>
-      <div class="faq-answer"><p>Payment details are being finalized. Likely options: PayPal, Stripe (card), and possibly crypto. Updates will be posted in the repo.</p></div>
-    </div>
-    <div class="faq-item">
       <button class="faq-question">Refunds?</button>
       <div class="faq-answer"><p>Beta and Premium are non-refundable once access is granted. Founder is non-refundable. If you have an issue, contact us — we'll sort it out.</p></div>
     </div>
@@ -229,7 +218,7 @@
 
 <section class="cta-section reveal">
   <div class="cta-card">
-    <h2>Ready to go <span class="text-ddpink">premium?</span></h2>
+    <h2>Ready To Go <span class="text-ddpink">Premium?</span></h2>
     <p>One-time payment. No subscriptions. Ever.</p>
     <div class="cta-buttons">
       <a href="#" class="btn btn-premium">✦ Premium — £9.99/year</a>
