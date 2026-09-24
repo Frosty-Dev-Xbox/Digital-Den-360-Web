@@ -5,30 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Store — Digital Den 360</title>
 <meta name="description" content="Browse the Digital Den 360 catalog — games, emulators, utilities, themes." />
-<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="icon" type="image/png" href="../assets/homefront-xbox-360-17_orig.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
-      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#181818' },
+      fontFamily: { display:['Anton','Impact','sans-serif'], mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
 <link rel="stylesheet" href="../style.css" />
 </head>
 <body class="bg-ddblack text-white font-sans overflow-x-hidden">
-<div class="bg-grid"></div>
-<div class="bg-glow bg-glow-1"></div>
-<div class="bg-glow bg-glow-2"></div>
 
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-container">
     <a href="../index.html" class="nav-logo">
-      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="../assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -40,71 +37,66 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
+    <a href="pricing.html" class="nav-cta">Go Premium</a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
-  <div class="hero-badge"><span class="pulse-dot"></span><span>🔒 Catalog locked until beta</span></div>
-  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Store</span></h1>
-  <p class="hero-desc">Browse the Digital Den 360 catalog. Unlocks at beta launch.</p>
+<section class="hero" style="min-height:70vh;background-image:url('../assets/forza-horizon-2-is-the-best-looking-game-on-xbox-one-change-v0-mp9w1wyk1lge1.jpg');background-size:cover;background-position:center;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>🔒 Catalog Locked Until Beta</span></div>
+  <h1 class="hero-title"><span class="text-ddpink-deep">The</span> <span class="text-ddpink">Store</span></h1>
+  <p class="hero-tagline">Browse The Den</p>
+  <p class="hero-desc">Games, emulators, utilities, themes — unlocks at beta launch.</p>
+</section>
+
+<section class="tile-grid">
+  <a href="features.html" class="tile tile-games">
+    <h3>Games</h3>
+    <p>Homebrew shooters, platformers, fighters, RPGs, and more.</p>
+    <span class="tile-cta">✅ Free Tier</span>
+  </a>
+  <a href="features.html" class="tile tile-emulators">
+    <h3>Emulators</h3>
+    <p>NES, SNES, Genesis, N64, Game Boy, and more.</p>
+    <span class="tile-cta">✅ Free Tier</span>
+  </a>
+  <a href="features.html" class="tile tile-themes">
+    <h3>Themes</h3>
+    <p>Basic dashboard skins and visual overhauls.</p>
+    <span class="tile-cta">✅ Free Tier</span>
+  </a>
 </section>
 
 <section class="section reveal">
   <div class="section-head">
-    <span class="section-label">Categories</span>
-    <h2>What's in the <span class="text-ddpink">den</span></h2>
+    <span class="section-label">Premium Content</span>
+    <h2>Exclusive <span class="text-ddpink">Drops</span></h2>
   </div>
 
   <div class="features-grid">
     <div class="feature-card reveal">
-      <div class="feature-icon">🎮</div>
-      <h3>Games</h3>
-      <p>Homebrew shooters, platformers, fighters, RPGs, puzzle games, and more.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✅ Free Tier</div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon">🕹️</div>
-      <h3>Emulators</h3>
-      <p>NES, SNES, Genesis, N64, Game Boy, and more — all playable on your 360.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✅ Free Tier</div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon">🛠️</div>
-      <h3>Utilities</h3>
-      <p>Dashboards, save editors, patches, system tools, FTP apps, and more.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✅ Free Tier</div>
-    </div>
-    <div class="feature-card reveal">
-      <div class="feature-icon">🎨</div>
-      <h3>Themes</h3>
-      <p>Basic dashboard skins and visual overhauls for your console.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✅ Free Tier</div>
-    </div>
-    <div class="feature-card reveal" style="border-color:rgba(255,215,0,0.4);">
       <div class="feature-icon">✦</div>
       <h3>Premium Games</h3>
       <p>Exclusive homebrew titles never released to the free tier.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✦ Premium</div>
+      <div class="compat-status full" style="margin-top:16px;display:inline-block;">✦ Premium</div>
     </div>
-    <div class="feature-card reveal" style="border-color:rgba(255,215,0,0.4);">
+    <div class="feature-card reveal">
       <div class="feature-icon">✦</div>
       <h3>Premium Themes</h3>
       <p>High-quality custom theme packs and animated skins.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">✦ Premium</div>
+      <div class="compat-status full" style="margin-top:16px;display:inline-block;">✦ Premium</div>
     </div>
-    <div class="feature-card reveal" style="border-color:rgba(255,20,147,0.5);">
-      <div class="feature-icon">💗</div>
-      <h3>Monthly Drops</h3>
-      <p>Rotating exclusive content for Supporter subscribers.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">💗 Supporter</div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🚀</div>
+      <h3>Early Access</h3>
+      <p>New drops land for Premium members 2 weeks early.</p>
+      <div class="compat-status full" style="margin-top:16px;display:inline-block;">✦ Premium</div>
     </div>
-    <div class="feature-card reveal" style="border-color:rgba(255,215,0,0.5);">
+    <div class="feature-card reveal">
       <div class="feature-icon">👑</div>
       <h3>Founder Content</h3>
       <p>Early dev builds and founder-only prototypes.</p>
-      <div class="compat-status full" style="margin-top:14px;display:inline-block;">👑 Founder</div>
+      <div class="compat-status full" style="margin-top:16px;display:inline-block;">👑 Founder</div>
     </div>
   </div>
 </section>
@@ -112,10 +104,10 @@
 <section class="section reveal">
   <div class="section-head">
     <span class="section-label">Access Levels</span>
-    <h2>What each tier <span class="text-ddpink">unlocks</span></h2>
+    <h2>What Each Tier <span class="text-ddpink">Unlocks</span></h2>
   </div>
 
-  <div class="compat-preview" style="max-width:1000px;">
+  <div class="compat-preview" style="max-width:1100px;">
     <div class="compat-item"><span class="compat-name">Standard Games</span><span class="compat-status full">✅ Free</span></div>
     <div class="compat-item"><span class="compat-name">Standard Emulators</span><span class="compat-status full">✅ Free</span></div>
     <div class="compat-item"><span class="compat-name">Standard Utilities</span><span class="compat-status full">✅ Free</span></div>
@@ -124,16 +116,16 @@
     <div class="compat-item"><span class="compat-name">Premium Exclusives</span><span class="compat-status full">✦ Premium</span></div>
     <div class="compat-item"><span class="compat-name">Premium Themes</span><span class="compat-status full">✦ Premium</span></div>
     <div class="compat-item"><span class="compat-name">Priority Servers</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Monthly Drops</span><span class="compat-status full">💗 Supporter</span></div>
     <div class="compat-item"><span class="compat-name">Early Dev Builds</span><span class="compat-status full">👑 Founder</span></div>
     <div class="compat-item"><span class="compat-name">Prototype Access</span><span class="compat-status full">👑 Founder</span></div>
     <div class="compat-item"><span class="compat-name">Name in Credits</span><span class="compat-status full">👑 Founder</span></div>
   </div>
 </section>
 
-<section class="cta-section reveal">
-  <div class="cta-card">
-    <h2>Want <span class="text-ddpink">early access?</span></h2>
+<section class="cinematic cinematic-cta reveal">
+  <div class="cinematic-content">
+    <span class="section-label">Early Access</span>
+    <h2>Want Early <span class="text-ddpink">Access?</span></h2>
     <p>Go Premium and get in months before everyone else.</p>
     <div class="cta-buttons">
       <a href="pricing.html" class="btn btn-premium">✦ View Pricing</a>
@@ -151,4 +143,4 @@
 
 <script src="../script.js"></script>
 </body>
-        </html>
+</html>
