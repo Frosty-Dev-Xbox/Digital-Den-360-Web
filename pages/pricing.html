@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Pricing — Jail X360</title>
-<meta name="description" content="Jail X360 pricing — paid beta access, then free release." />
+<title>Pricing — Digital Den 360</title>
+<meta name="description" content="Digital Den 360 pricing — Free, Premium, Founder, and Supporter tiers." />
 <link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,28 +13,14 @@
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { jailblack:'#0A0A0A', jailgreen:'#107C10', jailorange:'#FF6B00', jailgray:'#1A1A1A' },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
       fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
 <link rel="stylesheet" href="../style.css" />
-<style>
-.price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
-.price-card { padding: 40px 32px; background: linear-gradient(145deg, var(--gray), var(--black-2)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-lg); text-align: center; transition: var(--transition); position: relative; overflow: hidden; }
-.price-card.featured { border-color: rgba(255,107,0,0.5); box-shadow: 0 20px 60px rgba(255,107,0,0.15); transform: scale(1.02); }
-.price-card.featured::before { content: 'BEST VALUE'; position: absolute; top: 18px; right: -32px; background: var(--orange); color: var(--white); font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; padding: 6px 40px; transform: rotate(45deg); }
-.price-card:hover { transform: translateY(-6px); border-color: rgba(255,107,0,0.4); }
-.price-card.featured:hover { transform: scale(1.02) translateY(-6px); }
-.price-name { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
-.price-amount { font-family: var(--font-mono); font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--green), var(--orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 8px; }
-.price-desc { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
-.price-features { list-style: none; text-align: left; margin-bottom: 28px; display: flex; flex-direction: column; gap: 12px; }
-.price-features li { font-size: 0.9rem; color: var(--muted); display: flex; gap: 10px; align-items: center; }
-.price-features li::before { content: '✓'; color: var(--green); font-weight: 800; }
-</style>
 </head>
-<body class="bg-jailblack text-white font-sans overflow-x-hidden">
+<body class="bg-ddblack text-white font-sans overflow-x-hidden">
 <div class="bg-grid"></div>
 <div class="bg-glow bg-glow-1"></div>
 <div class="bg-glow bg-glow-2"></div>
@@ -42,78 +28,195 @@
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-container">
     <a href="../index.html" class="nav-logo">
-      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
-      <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="../index.html">Home</a></li>
       <li><a href="features.html">Features</a></li>
       <li><a href="compatibility.html">Compatibility</a></li>
-      <li><a href="roadmap.html">Roadmap</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="pricing.html" class="active">Pricing</a></li>
+      <li><a href="store.html">Store</a></li>
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="downloads.html" class="nav-cta"><span>Coming Soon</span></a>
+    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
 <section class="hero" style="min-height:auto;padding:160px 24px 60px;">
-  <div class="hero-badge"><span class="pulse-dot"></span><span>Paid Beta → Free Release</span></div>
-  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-jailgreen">Pri</span><span class="text-jailorange">cing</span></h1>
-  <p class="hero-desc">Support development during beta — or wait for the free release. Your choice.</p>
+  <div class="hero-badge"><span class="pulse-dot"></span><span>✦ Simple Pricing</span></div>
+  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Pri</span><span class="text-ddpink">cing</span></h1>
+  <p class="hero-desc">Free forever, or pay once for lifetime Premium access. No subscriptions required.</p>
 </section>
 
+<!-- MAIN TIERS -->
 <section class="section reveal">
-  <div class="price-grid">
-    <div class="price-card reveal">
-      <div class="price-name">Free Release</div>
-      <div class="price-amount">Free</div>
-      <div class="price-desc">Available after beta ends</div>
-      <ul class="price-features">
-        <li>Full homebrew catalog</li>
+  <div class="section-head">
+    <span class="section-label">Tiers</span>
+    <h2>Pick your <span class="text-ddpink">tier</span></h2>
+  </div>
+
+  <div class="premium-grid">
+    <div class="premium-card reveal">
+      <div class="premium-name">Free</div>
+      <div class="premium-amount">$0</div>
+      <div class="premium-desc">Available after beta</div>
+      <ul class="premium-features">
+        <li>Standard catalog access</li>
         <li>Games, emulators, utilities</li>
-        <li>Themes and tools</li>
+        <li>Basic themes</li>
         <li>Auto-updates</li>
         <li>Community submissions</li>
+        <li>GitHub support</li>
       </ul>
       <div class="phase-status planned" style="display:inline-block;">Phase 3</div>
     </div>
-    <div class="price-card featured reveal">
-      <div class="price-name">Paid Beta</div>
-      <div class="price-amount">TBA</div>
-      <div class="price-desc">One-time payment · Early access</div>
-      <ul class="price-features">
-        <li>Everything in Free Release</li>
-        <li>Early access before everyone</li>
+
+    <div class="premium-card featured reveal">
+      <div class="premium-name">Premium</div>
+      <div class="premium-amount">$5 <span>/ one-time</span></div>
+      <div class="premium-desc">Lifetime access · Best value</div>
+      <ul class="premium-features">
+        <li><strong>Everything in Free</strong></li>
+        <li>Early access drops</li>
+        <li>Exclusive premium games</li>
+        <li>Premium theme packs</li>
+        <li>Priority download servers</li>
+        <li>Ad-free experience</li>
         <li>Beta tester credit</li>
-        <li>Direct feedback to dev</li>
-        <li>Help shape the store</li>
+        <li>Premium badge in-den</li>
       </ul>
-      <div class="phase-status soon" style="display:inline-block;">Phase 2</div>
+      <a href="#" class="btn btn-premium" style="width:100%;justify-content:center;">Get Premium →</a>
+    </div>
+
+    <div class="premium-card reveal">
+      <div class="premium-name">Founder</div>
+      <div class="premium-amount">$20 <span>/ one-time</span></div>
+      <div class="premium-desc">Lifetime · Limited to 100</div>
+      <ul class="premium-features">
+        <li><strong>Everything in Premium</strong></li>
+        <li>Founder badge (forever)</li>
+        <li>Name in store credits</li>
+        <li>Vote on new features</li>
+        <li>Early dev builds</li>
+        <li>Founder-only Discord</li>
+        <li>Direct line to dev</li>
+        <li>Lifetime updates</li>
+      </ul>
+      <a href="#" class="btn btn-ghost" style="width:100%;justify-content:center;">Become a Founder →</a>
     </div>
   </div>
 </section>
 
+<!-- SUPPORTER TIER -->
 <section class="section reveal">
+  <div class="section-head">
+    <span class="section-label">Optional</span>
+    <h2>Monthly <span class="text-ddpink">supporter</span></h2>
+    <p>Prefer to support ongoing development? This tier rotates exclusive content monthly.</p>
+  </div>
+
+  <div style="max-width:600px;margin:0 auto;">
+    <div class="premium-card reveal">
+      <div class="premium-name">Supporter</div>
+      <div class="premium-amount">$2 <span>/ month</span></div>
+      <div class="premium-desc">Cancel anytime</div>
+      <ul class="premium-features">
+        <li><strong>Everything in Premium</strong></li>
+        <li>Monthly exclusive game drop</li>
+        <li>Monthly theme pack</li>
+        <li>Supporter badge (rotating)</li>
+        <li>Vote on monthly content</li>
+        <li>Cancel anytime — no lock-in</li>
+      </ul>
+      <a href="#" class="btn btn-ghost" style="width:100%;justify-content:center;">Subscribe →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE COMPARISON TABLE -->
+<section class="section reveal">
+  <div class="section-head">
+    <span class="section-label">Compare</span>
+    <h2>Full <span class="text-ddpink">comparison</span></h2>
+  </div>
+
+  <div class="compat-preview" style="max-width:1000px;">
+    <div class="compat-item"><span class="compat-name">Standard Catalog</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Games Section</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Emulators Section</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Utilities Section</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Basic Themes</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Auto-Updates</span><span class="compat-status full">✅ Free</span></div>
+    <div class="compat-item"><span class="compat-name">Early Access Drops</span><span class="compat-status full">✦ Premium</span></div>
+    <div class="compat-item"><span class="compat-name">Exclusive Premium Games</span><span class="compat-status full">✦ Premium</span></div>
+    <div class="compat-item"><span class="compat-name">Premium Theme Packs</span><span class="compat-status full">✦ Premium</span></div>
+    <div class="compat-item"><span class="compat-name">Priority Download Servers</span><span class="compat-status full">✦ Premium</span></div>
+    <div class="compat-item"><span class="compat-name">Ad-Free Experience</span><span class="compat-status full">✦ Premium</span></div>
+    <div class="compat-item"><span class="compat-name">Founder Badge</span><span class="compat-status full">👑 Founder</span></div>
+    <div class="compat-item"><span class="compat-name">Name in Credits</span><span class="compat-status full">👑 Founder</span></div>
+    <div class="compat-item"><span class="compat-name">Vote on Features</span><span class="compat-status full">👑 Founder</span></div>
+    <div class="compat-item"><span class="compat-name">Early Dev Builds</span><span class="compat-status full">👑 Founder</span></div>
+    <div class="compat-item"><span class="compat-name">Founder Discord</span><span class="compat-status full">👑 Founder</span></div>
+    <div class="compat-item"><span class="compat-name">Monthly Exclusive Drop</span><span class="compat-status full">💗 Supporter</span></div>
+  </div>
+</section>
+
+<!-- FAQ SNIPPET -->
+<section class="section reveal">
+  <div class="section-head">
+    <span class="section-label">Common Questions</span>
+    <h2>Quick <span class="text-ddpink">FAQ</span></h2>
+  </div>
+
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-question">Why pay if the store becomes free?</button>
+      <div class="faq-answer"><p>Premium and Founder tiers get <strong>early access</strong> — months before the free release. You also get exclusive content that never comes to the free tier, plus a lifetime badge.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Is Premium a subscription?</button>
+      <div class="faq-answer"><p>No. Premium ($5) and Founder ($20) are <strong>one-time payments</strong>. You pay once and keep access forever. The optional Supporter tier ($2/month) is a subscription for those who want to keep supporting development.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What happens when beta ends?</button>
+      <div class="faq-answer"><p>Premium and Founder keep their tier and badges permanently. The free tier opens with the full standard catalog. Premium users keep their exclusive content on top.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Can I upgrade later?</button>
+      <div class="faq-answer"><p>Yes. You can upgrade from Premium to Founder anytime — you only pay the difference. Supporter subscribers can cancel anytime.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">Will prices go up?</button>
+      <div class="faq-answer"><p>Beta prices are locked in. Anyone who buys Premium or Founder during beta keeps that price forever. After beta, prices may increase — but your tier stays the same.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-question">What payment methods will you accept?</button>
+      <div class="faq-answer"><p>Payment details are being finalized. Likely options: PayPal, Stripe (card), and possibly crypto. Updates will be posted in the repo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section reveal">
   <div class="cta-card">
-    <h2>Beta pricing <span class="text-jailorange">coming soon</span></h2>
-    <p>Star the repo to be notified when beta pricing is announced.</p>
+    <h2>Ready to go <span class="text-ddpink">premium?</span></h2>
+    <p>Lock in beta pricing — never pay more later.</p>
     <div class="cta-buttons">
-      <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
-      <a href="roadmap.html" class="btn btn-ghost">View Roadmap</a>
+      <a href="#" class="btn btn-premium">✦ Get Premium — $5</a>
+      <a href="#" class="btn btn-ghost">👑 Become a Founder — $20</a>
     </div>
   </div>
 </section>
 
 <footer class="footer">
   <div class="footer-bottom" style="border:none;padding-top:0;">
-    <span>© 2026 Jail X360 — Homebrew only. No piracy. Ever.</span>
-    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-jailorange">Frosty-Dev-Xbox</a></span>
+    <span>© 2026 Digital Den 360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-ddpink">Frosty-Dev-Xbox</a></span>
   </div>
 </footer>
 
 <script src="../script.js"></script>
 </body>
-  </html>
+</html>
