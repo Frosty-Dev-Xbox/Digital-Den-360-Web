@@ -254,3 +254,4 @@ Built by [Frosty-Dev-Xbox](https://github.com/Frosty-Dev-Xbox). A passion projec
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF69B4,50:FF1493,100:000000&height=150&section=footer&text=DIGITAL%20DEN%20360&fontSize=42&fontColor=FFFFFF&fontAlignY=72&animation=fadeIn" width="100%"/>
 
 </div>
+ 
