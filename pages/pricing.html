@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pricing — Jail X360</title>
+<meta name="description" content="Jail X360 pricing — paid beta access, then free release." />
+<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { jailblack:'#0A0A0A', jailgreen:'#107C10', jailorange:'#FF6B00', jailgray:'#1A1A1A' },
+      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+    }}
+  };
+</script>
+<link rel="stylesheet" href="../style.css" />
+<style>
+.price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; max-width: 900px; margin: 0 auto; }
+.price-card { padding: 40px 32px; background: linear-gradient(145deg, var(--gray), var(--black-2)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius-lg); text-align: center; transition: var(--transition); position: relative; overflow: hidden; }
+.price-card.featured { border-color: rgba(255,107,0,0.5); box-shadow: 0 20px 60px rgba(255,107,0,0.15); transform: scale(1.02); }
+.price-card.featured::before { content: 'BEST VALUE'; position: absolute; top: 18px; right: -32px; background: var(--orange); color: var(--white); font-size: 0.7rem; font-weight: 800; letter-spacing: 2px; padding: 6px 40px; transform: rotate(45deg); }
+.price-card:hover { transform: translateY(-6px); border-color: rgba(255,107,0,0.4); }
+.price-card.featured:hover { transform: scale(1.02) translateY(-6px); }
+.price-name { font-family: var(--font-mono); font-size: 0.85rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 20px; }
+.price-amount { font-family: var(--font-mono); font-size: 3rem; font-weight: 800; background: linear-gradient(135deg, var(--green), var(--orange)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; line-height: 1; margin-bottom: 8px; }
+.price-desc { color: var(--muted); font-size: 0.9rem; margin-bottom: 28px; }
+.price-features { list-style: none; text-align: left; margin-bottom: 28px; display: flex; flex-direction: column; gap: 12px; }
+.price-features li { font-size: 0.9rem; color: var(--muted); display: flex; gap: 10px; align-items: center; }
+.price-features li::before { content: '✓'; color: var(--green); font-weight: 800; }
+</style>
+</head>
+<body class="bg-jailblack text-white font-sans overflow-x-hidden">
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
 
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
+      <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="downloads.html" class="nav-cta"><span>Coming Soon</span></a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>Paid Beta → Free Release</span></div>
+  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-jailgreen">Pri</span><span class="text-jailorange">cing</span></h1>
+  <p class="hero-desc">Support development during beta — or wait for the free release. Your choice.</p>
+</section>
+
+<section class="section reveal">
+  <div class="price-grid">
+    <div class="price-card reveal">
+      <div class="price-name">Free Release</div>
+      <div class="price-amount">Free</div>
+      <div class="price-desc">Available after beta ends</div>
+      <ul class="price-features">
+        <li>Full homebrew catalog</li>
+        <li>Games, emulators, utilities</li>
+        <li>Themes and tools</li>
+        <li>Auto-updates</li>
+        <li>Community submissions</li>
+      </ul>
+      <div class="phase-status planned" style="display:inline-block;">Phase 3</div>
+    </div>
+    <div class="price-card featured reveal">
+      <div class="price-name">Paid Beta</div>
+      <div class="price-amount">TBA</div>
+      <div class="price-desc">One-time payment · Early access</div>
+      <ul class="price-features">
+        <li>Everything in Free Release</li>
+        <li>Early access before everyone</li>
+        <li>Beta tester credit</li>
+        <li>Direct feedback to dev</li>
+        <li>Help shape the store</li>
+      </ul>
+      <div class="phase-status soon" style="display:inline-block;">Phase 2</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="cta-card">
+    <h2>Beta pricing <span class="text-jailorange">coming soon</span></h2>
+    <p>Star the repo to be notified when beta pricing is announced.</p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
+      <a href="roadmap.html" class="btn btn-ghost">View Roadmap</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom" style="border:none;padding-top:0;">
+    <span>© 2026 Jail X360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-jailorange">Frosty-Dev-Xbox</a></span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+  </html>
