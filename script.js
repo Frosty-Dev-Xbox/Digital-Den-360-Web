@@ -82,10 +82,10 @@ const CONFIG = {
         }
       });
     },
-    { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+    { threshold: 0.12, rootMargin: '0px 0px -80px 0px' }
   );
   items.forEach((item, i) => {
-    item.style.transitionDelay = `${Math.min(i * 60, 400)}ms`;
+    item.style.transitionDelay = `${Math.min(i * 80, 500)}ms`;
     observer.observe(item);
   });
 })();
@@ -102,7 +102,7 @@ const CONFIG = {
   if (!els.stars && !els.forks && !els.watchers && !els.issues) return;
   function animateNumber(el, target) {
     if (!el) return;
-    const duration = 1200;
+    const duration = 1400;
     const start = performance.now();
     function step(now) {
       const progress = Math.min((now - start) / duration, 1);
@@ -151,7 +151,7 @@ const CONFIG = {
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const top = target.getBoundingClientRect().top + window.scrollY - 90;
+      const top = target.getBoundingClientRect().top + window.scrollY - 100;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
@@ -167,7 +167,8 @@ const CONFIG = {
     ticking = true;
     requestAnimationFrame(() => {
       const y = window.scrollY;
-      hero.style.setProperty('--hero-scroll', `${y * 0.3}px`);
+      const before = hero.querySelector('::before');
+      hero.style.setProperty('--hero-scroll', `${y * 0.4}px`);
       ticking = false;
     });
   });
@@ -188,10 +189,10 @@ const CONFIG = {
 
 /* 9. EASTER EGG */
 (function easterEgg() {
-  const style = 'color:#FF1493;font-weight:800;font-size:14px;';
-  const pink = 'color:#FF69B4;font-weight:800;font-size:14px;';
-  console.log('%c💗 DIGITAL DEN 360', style);
-  console.log('%cYour den. Your games.', pink);
-  console.log('%cMade with ❤️ by Frosty-Dev-Xbox', style);
-  console.log('%chttps://github.com/Frosty-Dev-Xbox/Digital-Den-360', pink);
+  const pink = 'color:#FF1493;font-weight:800;font-size:14px;';
+  const yellow = 'color:#FFD700;font-weight:800;font-size:14px;';
+  console.log('%c💗 DIGITAL DEN 360', pink);
+  console.log('%cYour den. Your games.', yellow);
+  console.log('%cMade with ❤️ by Frosty-Dev-Xbox', pink);
+  console.log('%chttps://github.com/Frosty-Dev-Xbox/Digital-Den-360', yellow);
 })();
