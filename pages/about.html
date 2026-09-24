@@ -5,30 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>About — Digital Den 360</title>
 <meta name="description" content="About Digital Den 360 and Frosty-Dev-Xbox." />
-<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="icon" type="image/png" href="../assets/homefront-xbox-360-17_orig.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
-      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#181818' },
+      fontFamily: { display:['Anton','Impact','sans-serif'], mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
 <link rel="stylesheet" href="../style.css" />
 </head>
 <body class="bg-ddblack text-white font-sans overflow-x-hidden">
-<div class="bg-grid"></div>
-<div class="bg-glow bg-glow-1"></div>
-<div class="bg-glow bg-glow-2"></div>
 
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-container">
     <a href="../index.html" class="nav-logo">
-      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="../assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -40,38 +37,58 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
+    <a href="pricing.html" class="nav-cta">Go Premium</a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
-  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Ab</span><span class="text-ddpink">out</span></h1>
+<section class="hero" style="min-height:60vh;background-image:url('../assets/homefront-xbox-360-17_orig.png');background-size:cover;background-position:center;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>The Story</span></div>
+  <h1 class="hero-title"><span class="text-ddpink-deep">Ab</span><span class="text-ddpink">out</span></h1>
+  <p class="hero-tagline">Behind The Den</p>
   <p class="hero-desc">The story behind Digital Den 360.</p>
 </section>
 
 <section class="section reveal">
-  <div style="max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:24px;">
+  <div class="features-grid">
     <div class="feature-card reveal">
-      <h3 style="color:var(--pink-bright);margin-bottom:14px;">💗 What is Digital Den 360?</h3>
-      <p style="font-size:1rem;line-height:1.8;">Digital Den 360 is a homebrew store for jailbroken Xbox 360 consoles. It brings together games, emulators, utilities, and themes into one place — downloadable straight to your console without needing a PC.</p>
+      <div class="feature-icon">💗</div>
+      <h3>What Is It?</h3>
+      <p>Digital Den 360 is a homebrew store for jailbroken Xbox 360 consoles. Games, emulators, utilities, and themes — all in one place.</p>
     </div>
     <div class="feature-card reveal">
-      <h3 style="color:var(--pink-bright);margin-bottom:14px;">🎯 Why build it?</h3>
-      <p style="font-size:1rem;line-height:1.8;">The Xbox 360 homebrew scene is alive and thriving, but finding quality content is scattered across forums and old file hosts. Digital Den 360 fixes that — a single, curated, always-updated den.</p>
+      <div class="feature-icon">🎯</div>
+      <h3>Why Build It?</h3>
+      <p>The 360 homebrew scene is scattered across forums and dead file hosts. Digital Den 360 fixes that — one curated, always-updated den.</p>
     </div>
     <div class="feature-card reveal">
-      <h3 style="color:var(--pink-bright);margin-bottom:14px;">✦ Why Premium?</h3>
-      <p style="font-size:1rem;line-height:1.8;">Building and maintaining a store takes time and money. Premium and Founder tiers help cover server costs, support homebrew devs, and keep the free tier free for everyone.</p>
+      <div class="feature-icon">✦</div>
+      <h3>Why Premium?</h3>
+      <p>Building and maintaining a store takes time and money. Premium and Founder help cover servers and support homebrew devs.</p>
     </div>
     <div class="feature-card reveal">
-      <h3 style="color:var(--pink-bright);margin-bottom:14px;">🧑‍💻 Who made it?</h3>
-      <p style="font-size:1rem;line-height:1.8;">Digital Den 360 is built by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" style="color:var(--pink-bright);font-weight:700;">Frosty-Dev-Xbox</a>. It's a passion project — not a company, not a business. Just someone who loves the homebrew community.</p>
+      <div class="feature-icon">🧑‍💻</div>
+      <h3>Who Made It?</h3>
+      <p>Built by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" style="color:var(--pink-bright);">Frosty-Dev-Xbox</a>. A passion project, not a business.</p>
     </div>
     <div class="feature-card reveal">
-      <h3 style="color:var(--pink-bright);margin-bottom:14px;">📜 Legal & ethical</h3>
-      <p style="font-size:1rem;line-height:1.8;">Digital Den 360 only hosts homebrew and open-source content. No retail games, no XBLA, no piracy. Ever. This is about supporting creators, not stealing from them.</p>
+      <div class="feature-icon">📜</div>
+      <h3>Legal & Ethical</h3>
+      <p>Homebrew and open-source only. No retail games, no XBLA, no piracy. Ever.</p>
     </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🤝</div>
+      <h3>Community</h3>
+      <p>Open source, community-driven. Submit your own homebrew and get featured.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cinematic cinematic-about reveal">
+  <div class="cinematic-content">
+    <span class="section-label">The Mission</span>
+    <h2>Preserving The <span class="text-ddpink">360 Scene</span></h2>
+    <p>Digital Den 360 exists to celebrate and preserve the incredible Xbox 360 homebrew community. Every game, emulator, and tool featured here is made by passionate developers who deserve recognition.</p>
   </div>
 </section>
 
