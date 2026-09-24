@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Membership — Digital Den 360</title>
+<meta name="description" content="Digital Den 360 membership tiers — Free, Premium, Founder, and Supporter." />
+<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
+      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+    }}
+  };
+</script>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="bg-ddblack text-white font-sans overflow-x-hidden">
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="store.html">Store</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>✦ Join the Den</span></div>
+  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Member</span><span class="text-ddpink">ship</span></h1>
+  <p class="hero-desc">Choose your tier. Free, Premium, Founder, or Supporter.</p>
+</section>
+
+<section class="section reveal">
+  <div class="premium-grid" style="max-width:1200px;">
+    <div class="premium-card reveal">
+      <div class="premium-name">Free</div>
+      <div class="premium-amount">$0</div>
+      <div class="premium-desc">No payment required</div>
+      <ul class="premium-features">
+        <li>Standard catalog</li>
+        <li>Games, emulators, utilities</li>
+        <li>Basic themes</li>
+        <li>Auto-updates</li>
+      </ul>
+      <div class="phase-status planned" style="display:inline-block;">Coming Phase 3</div>
+    </div>
+
+    <div class="premium-card featured reveal">
+      <div class="premium-name">Premium</div>
+      <div class="premium-amount">$5 <span>/ one-time</span></div>
+      <div class="premium-desc">Lifetime access</div>
+      <ul class="premium-features">
+        <li>Everything in Free</li>
+        <li>Early access drops</li>
+        <li>Exclusive premium games</li>
+        <li>Premium theme packs</li>
+        <li>Priority servers</li>
+        <li>Ad-free</li>
+        <li>Premium badge</li>
+      </ul>
+      <a href="pricing.html" class="btn btn-premium" style="width:100%;justify-content:center;">Get Premium →</a>
+    </div>
+
+    <div class="premium-card reveal">
+      <div class="premium-name">Founder</div>
+      <div class="premium-amount">$20 <span>/ one-time</span></div>
+      <div class="premium-desc">Lifetime · Limited to 100</div>
+      <ul class="premium-features">
+        <li>Everything in Premium</li>
+        <li>Founder badge (forever)</li>
+        <li>Name in credits</li>
+        <li>Vote on features</li>
+        <li>Early dev builds</li>
+        <li>Founder Discord</li>
+        <li>Direct line to dev</li>
+      </ul>
+      <a href="pricing.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Become a Founder →</a>
+    </div>
+
+    <div class="premium-card reveal">
+      <div class="premium-name">Supporter</div>
+      <div class="premium-amount">$2 <span>/ month</span></div>
+      <div class="premium-desc">Cancel anytime</div>
+      <ul class="premium-features">
+        <li>Everything in Premium</li>
+        <li>Monthly exclusive drop</li>
+        <li>Monthly theme pack</li>
+        <li>Supporter badge</li>
+        <li>Vote on monthly content</li>
+      </ul>
+      <a href="pricing.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Subscribe →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="cta-card">
+    <h2>Not sure which tier? <span class="text-ddpink">Start free.</span></h2>
+    <p>Free opens at Phase 3. Premium and Founder get early access now.</p>
+    <div class="cta-buttons">
+      <a href="pricing.html" class="btn btn-premium">✦ See Pricing</a>
+      <a href="faq.html" class="btn btn-ghost">Read the FAQ</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom" style="border:none;padding-top:0;">
+    <span>© 2026 Digital Den 360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-ddpink">Frosty-Dev-Xbox</a></span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
