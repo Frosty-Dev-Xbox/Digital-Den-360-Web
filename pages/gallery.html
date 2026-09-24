@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gallery — Jail X360</title>
+<meta name="description" content="Screenshots and previews of Jail X360 on Xbox 360." />
+<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { jailblack:'#0A0A0A', jailgreen:'#107C10', jailorange:'#FF6B00', jailgray:'#1A1A1A' },
+      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+    }}
+  };
+</script>
+<link rel="stylesheet" href="../style.css" />
+<style>
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.gallery-item { aspect-ratio: 16/9; background: linear-gradient(145deg, var(--gray), var(--black-2)); border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transition: var(--transition); cursor: pointer; position: relative; overflow: hidden; }
+.gallery-item:hover { transform: translateY(-6px); border-color: rgba(255,107,0,0.4); box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 40px rgba(255,107,0,0.15); }
+.gallery-item .placeholder-icon { font-size: 3rem; opacity: 0.5; }
+.gallery-item .placeholder-text { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+</style>
+</head>
+<body class="bg-jailblack text-white font-sans overflow-x-hidden">
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
 
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
+      <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="downloads.html" class="nav-cta"><span>Coming Soon</span></a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>Screenshots coming soon</span></div>
+  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-jailgreen">Gal</span><span class="text-jailorange">lery</span></h1>
+  <p class="hero-desc">Screenshots and previews of the store. Drop in real ones once the beta drops.</p>
+</section>
+
+<section class="section reveal">
+  <div class="gallery-grid">
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">🖼️</div>
+      <div class="placeholder-text">Store Home</div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">🎮</div>
+      <div class="placeholder-text">Games Catalog</div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">🕹️</div>
+      <div class="placeholder-text">Emulators</div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">📥</div>
+      <div class="placeholder-text">Download Screen</div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">🎨</div>
+      <div class="placeholder-text">Themes</div>
+    </div>
+    <div class="gallery-item reveal">
+      <div class="placeholder-icon">⚙️</div>
+      <div class="placeholder-text">Settings</div>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="cta-card">
+    <h2>Want to see it <span class="text-jailorange">in action?</span></h2>
+    <p>Star the repo and get notified when beta screenshots drop.</p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom" style="border:none;padding-top:0;">
+    <span>© 2026 Jail X360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-jailorange">Frosty-Dev-Xbox</a></span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+                                 </html>
