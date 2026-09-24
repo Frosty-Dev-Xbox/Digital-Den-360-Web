@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Features — Jail X360</title>
+<meta name="description" content="Every feature in Jail X360 — games, emulators, utilities, themes, one-click install, auto-updates." />
+<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: { extend: {
+      colors: { jailblack:'#0A0A0A', jailgreen:'#107C10', jailorange:'#FF6B00', jailgray:'#1A1A1A' },
+      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+    }}
+  };
+</script>
+<link rel="stylesheet" href="../style.css" />
+</head>
+<body class="bg-jailblack text-white font-sans overflow-x-hidden">
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow-1"></div>
+<div class="bg-glow bg-glow-2"></div>
 
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="nav-logo">
+      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
+      <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="features.html" class="active">Features</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>
+      <li><a href="roadmap.html">Roadmap</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="downloads.html" class="nav-cta"><span>Coming Soon</span></a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>Everything in one store</span></div>
+  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-jailgreen">Feat</span><span class="text-jailorange">ures</span></h1>
+  <p class="hero-desc">Built for the homebrew community, by the homebrew community.</p>
+</section>
+
+<section class="section reveal">
+  <div class="features-grid">
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎮</div>
+      <h3>Homebrew Games</h3>
+      <p>Shooters, platformers, fighters, puzzle games and more — all built specifically for the Xbox 360.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🕹️</div>
+      <h3>Emulators</h3>
+      <p>NES, SNES, Genesis, N64, Game Boy, and more — play retro classics on your 360.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🛠️</div>
+      <h3>Utilities</h3>
+      <p>Dashboards, system tools, save editors, and patches to keep your console running smooth.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🎨</div>
+      <h3>Themes</h3>
+      <p>Custom dashboard skins and visual overhauls to give your 360 a fresh look.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">📦</div>
+      <h3>One-Click Install</h3>
+      <p>No PC, no USB drives. Downloads install straight to your console automatically.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔄</div>
+      <h3>Auto-Updates</h3>
+      <p>The manifest stays fresh — new homebrew appears in your store automatically.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🧩</div>
+      <h3>Community Driven</h3>
+      <p>Submit your own homebrew via GitHub and get it featured in the store.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">🔒</div>
+      <h3>Homebrew Only</h3>
+      <p>100% legal. No retail games, no XBLA, no piracy. Just homebrew and open-source content.</p>
+    </div>
+    <div class="feature-card reveal">
+      <div class="feature-icon">⚡</div>
+      <h3>Fast Downloads</h3>
+      <p>Powered by GitHub Releases — fast, reliable, and globally distributed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="cta-card">
+    <h2>Ready to <span class="text-jailgreen">try it?</span></h2>
+    <p>The store isn't live yet — but you can star the repo and be first in line.</p>
+    <div class="cta-buttons">
+      <a href="https://github.com/Frosty-Dev-Xbox/Jail-X360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
+      <a href="roadmap.html" class="btn btn-ghost">View Roadmap</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-bottom" style="border:none;padding-top:0;">
+    <span>© 2026 Jail X360 — Homebrew only. No piracy. Ever.</span>
+    <span>Made with ❤️ by <a href="https://github.com/Frosty-Dev-Xbox" target="_blank" class="text-jailorange">Frosty-Dev-Xbox</a></span>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+      </html>
