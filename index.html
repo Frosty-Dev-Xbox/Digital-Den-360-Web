@@ -3,19 +3,19 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Digital Den 360 — The Homebrew Den for Jailbroken Xbox 360s</title>
-<meta name="description" content="Digital Den 360 is the homebrew store for jailbroken Xbox 360 consoles. Download games, emulators, utilities, and themes directly to your console." />
+<title>Digital Den 360 — Your Den. Your Games.</title>
+<meta name="description" content="Digital Den 360 is the homebrew store for jailbroken Xbox 360 consoles. Games, emulators, utilities, and themes — direct to your console." />
 <meta name="theme-color" content="#000000" />
-<link rel="icon" type="image/jpeg" href="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<link rel="icon" type="image/png" href="assets/homefront-xbox-360-17_orig.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
-      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#181818' },
+      fontFamily: { display:['Anton','Impact','sans-serif'], mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
@@ -23,14 +23,10 @@
 </head>
 <body class="bg-ddblack text-white font-sans overflow-x-hidden">
 
-<div class="bg-grid"></div>
-<div class="bg-glow bg-glow-1"></div>
-<div class="bg-glow bg-glow-2"></div>
-
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
-      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -42,219 +38,204 @@
       <li><a href="pages/faq.html">FAQ</a></li>
       <li><a href="pages/contact.html">Contact</a></li>
     </ul>
-    <a href="pages/pricing.html" class="nav-cta">
-      <span>Go Premium</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <a href="pages/pricing.html" class="nav-cta">Go Premium</a>
+    <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
-  <div class="hero-badge">
-    <span class="pulse-dot"></span>
-    <span>Premium Beta Soon → Free Release</span>
-  </div>
-  <div class="hero-logo-wrap">
-    <div class="hero-logo-glow"></div>
-    <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360 Logo" class="hero-logo" />
-  </div>
+  <div class="hero-badge"><span class="pulse-dot"></span><span>Premium Beta Soon → Free Release</span></div>
   <h1 class="hero-title">
-    <span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span>
+    <span class="text-ddpink-deep">Digital</span><br><span class="text-ddpink">Den 360</span>
   </h1>
-  <p class="hero-tagline">
-    <span class="text-ddpink-deep">Your den.</span> <span class="text-ddpink">Your games.</span>
-  </p>
-  <div class="hero-typing">
-    <span id="typingText"></span><span class="cursor">|</span>
-  </div>
-  <p class="hero-desc">
-    The homebrew den for jailbroken Xbox 360 consoles. Browse and download
-    <strong class="text-ddpink">games</strong>, <strong class="text-ddpink-deep">emulators</strong>,
-    <strong class="text-ddpink">utilities</strong>, and <strong class="text-ddpink-deep">themes</strong>
-    directly to your console — no PC required.
-  </p>
+  <p class="hero-tagline"><span class="text-ddpink-deep">Your den.</span> <span class="text-ddpink">Your games.</span></p>
+  <div class="hero-typing"><span id="typingText"></span><span class="cursor">|</span></div>
+  <p class="hero-desc">The homebrew den for jailbroken Xbox 360 consoles. Games, <strong class="text-ddpink">emulators</strong>, utilities, and themes — direct to your console. No PC required.</p>
   <div class="hero-cta">
-    <a href="pages/pricing.html" class="btn btn-primary">
-      <span>See Pricing</span>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-    </a>
-    <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-ghost">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2c-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.29-1.71-1.29-1.71-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 015.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.42-2.7 5.39-5.26 5.68.41.35.78 1.05.78 2.12v3.14c0 .31.21.68.8.56A11.51 11.51 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
-      <span>View on GitHub</span>
-    </a>
-  </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
+    <a href="pages/pricing.html" class="btn btn-primary">See Pricing →</a>
+    <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-ghost">View on GitHub</a>
   </div>
 </section>
 
-<section class="status-strip reveal">
-  <div class="status-item"><div class="status-dot text-ddpink"></div><span><strong class="text-ddpink">RGH</strong> Supported</span></div>
-  <div class="status-item"><div class="status-dot text-ddpink"></div><span><strong class="text-ddpink">JTAG</strong> Supported</span></div>
-  <div class="status-item"><div class="status-dot text-ddpink"></div><span><strong class="text-ddpink">BadUpdate</strong> Supported</span></div>
-  <div class="status-item"><div class="status-dot text-ddpink"></div><span><strong class="text-ddpink">Aurora</strong> Ready</span></div>
+<!-- STATUS -->
+<section class="status-strip">
+  <div class="status-item"><div class="status-dot"></div><span>RGH Supported</span></div>
+  <div class="status-item"><div class="status-dot"></div><span>JTAG Supported</span></div>
+  <div class="status-item"><div class="status-dot"></div><span>BadUpdate Supported</span></div>
+  <div class="status-item"><div class="status-dot"></div><span>Aurora Ready</span></div>
 </section>
 
+<!-- FEATURED TILES -->
+<section class="tile-grid">
+  <a href="pages/features.html" class="tile tile-games">
+    <h3>Games</h3>
+    <p>Homebrew shooters, platformers, fighters, and more.</p>
+    <span class="tile-cta">Explore →</span>
+  </a>
+  <a href="pages/features.html" class="tile tile-emulators">
+    <h3>Emulators</h3>
+    <p>NES, SNES, Genesis, N64, and more on your 360.</p>
+    <span class="tile-cta">Explore →</span>
+  </a>
+  <a href="pages/features.html" class="tile tile-themes">
+    <h3>Themes</h3>
+    <p>Custom dashboard skins and visual overhauls.</p>
+    <span class="tile-cta">Explore →</span>
+  </a>
+</section>
+
+<!-- NOT LIVE -->
 <section class="notlive reveal">
   <div class="notlive-card">
     <div class="notlive-icon">⚠️</div>
     <div>
       <h3>Not Live Yet</h3>
-      <p>Digital Den 360 is currently in development. No downloads are available at this time. Star the repo to get notified the moment the beta drops.</p>
+      <p>Digital Den 360 is currently in development. No downloads available. Star the repo to get notified.</p>
     </div>
-    <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-small">⭐ Star the Repo</a>
+    <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-small">⭐ Star Repo</a>
   </div>
 </section>
 
-<!-- PRICING SECTION -->
+<!-- PRICING -->
 <section class="section reveal" id="pricing">
   <div class="section-head">
     <span class="section-label">Pricing</span>
-    <h2>Choose your <span class="text-ddpink">tier</span></h2>
-    <p>Free forever, or go Premium for early access and exclusive content.</p>
+    <h2>One-Time <span class="text-ddpink">Pricing</span></h2>
+    <p>No subscriptions. No auto-renew. Pay once, keep your access.</p>
   </div>
 
   <div class="premium-grid">
     <div class="premium-card reveal">
       <div class="premium-name">Free</div>
-      <div class="premium-amount">$0</div>
-      <div class="premium-desc">Available after beta ends</div>
+      <div class="premium-amount">£0</div>
+      <div class="premium-desc">Forever free · Phase 3</div>
       <ul class="premium-features">
-        <li>Standard homebrew catalog</li>
+        <li>Standard catalog</li>
         <li>Games, emulators, utilities</li>
         <li>Basic themes</li>
         <li>Auto-updates</li>
-        <li>Community submissions</li>
-        <li>GitHub support</li>
       </ul>
-      <a href="pages/pricing.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Compare Tiers →</a>
+      <div class="phase-status planned">Phase 3</div>
+    </div>
+
+    <div class="premium-card reveal">
+      <div class="premium-name">Beta Access</div>
+      <div class="premium-amount">£2.99 <span>/ beta</span></div>
+      <div class="premium-desc">Per beta cycle · One-time</div>
+      <ul class="premium-features">
+        <li>Access to that beta cycle</li>
+        <li>Early content preview</li>
+        <li>Beta den builds</li>
+        <li>Vote on next features</li>
+      </ul>
+      <div class="phase-status soon">Phase 2</div>
     </div>
 
     <div class="premium-card featured reveal">
       <div class="premium-name">Premium</div>
-      <div class="premium-amount">$5 <span>/ one-time</span></div>
-      <div class="premium-desc">Early access · Lifetime access</div>
+      <div class="premium-amount">£9.99 <span>/ year</span></div>
+      <div class="premium-desc">One-time · 12 months access</div>
       <ul class="premium-features">
         <li><strong>Everything in Free</strong></li>
-        <li>Early access before everyone</li>
+        <li>12 months full access</li>
+        <li>Early access drops</li>
         <li>Exclusive premium games</li>
         <li>Premium theme packs</li>
-        <li>Beta tester credit</li>
-        <li>Priority support</li>
-        <li>Premium badge in-den</li>
-        <li>No ads ever</li>
+        <li>Priority download servers</li>
+        <li>Cloud save sync</li>
+        <li>Premium badge</li>
       </ul>
-      <a href="pages/pricing.html" class="btn btn-premium" style="width:100%;justify-content:center;">Get Premium →</a>
+      <a href="pages/pricing.html" class="btn btn-premium">Get Premium →</a>
     </div>
 
     <div class="premium-card reveal">
       <div class="premium-name">Founder</div>
-      <div class="premium-amount">$20 <span>/ one-time</span></div>
+      <div class="premium-amount">£24.99 <span>/ once</span></div>
       <div class="premium-desc">Lifetime · Limited to 100</div>
       <ul class="premium-features">
         <li><strong>Everything in Premium</strong></li>
+        <li>Lifetime access</li>
         <li>Founder badge (forever)</li>
-        <li>Name in store credits</li>
-        <li>Vote on new features</li>
-        <li>Lifetime updates</li>
-        <li>Direct line to dev</li>
+        <li>Name in credits</li>
         <li>Early dev builds</li>
-        <li>Founder-only Discord</li>
+        <li>Founder Discord</li>
+        <li>Vote on core features</li>
       </ul>
-      <a href="pages/pricing.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Become a Founder →</a>
+      <a href="pages/pricing.html" class="btn btn-ghost">Become a Founder →</a>
     </div>
   </div>
 </section>
 
-<!-- ACCESS COMPARISON -->
-<section class="section reveal">
-  <div class="section-head">
-    <span class="section-label">Store Access</span>
-    <h2>What you can <span class="text-ddpink">access</span></h2>
-  </div>
-
-  <div class="compat-preview" style="max-width:1000px;">
-    <div class="compat-item"><span class="compat-name">Standard Catalog</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Games Section</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Emulators Section</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Utilities Section</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Basic Themes</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Auto-Updates</span><span class="compat-status full">✅ Free</span></div>
-    <div class="compat-item"><span class="compat-name">Early Access Drops</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Exclusive Premium Games</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Premium Theme Packs</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Priority Download Servers</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Ad-Free Experience</span><span class="compat-status full">✦ Premium</span></div>
-    <div class="compat-item"><span class="compat-name">Founder Badge</span><span class="compat-status full">👑 Founder</span></div>
-    <div class="compat-item"><span class="compat-name">Name in Credits</span><span class="compat-status full">👑 Founder</span></div>
-    <div class="compat-item"><span class="compat-name">Vote on Features</span><span class="compat-status full">👑 Founder</span></div>
-    <div class="compat-item"><span class="compat-name">Early Dev Builds</span><span class="compat-status full">👑 Founder</span></div>
-    <div class="compat-item"><span class="compat-name">Founder Discord</span><span class="compat-status full">👑 Founder</span></div>
-  </div>
-</section>
-
-<!-- FEATURES -->
-<section class="section reveal" id="features">
-  <div class="section-head">
-    <span class="section-label">Features</span>
-    <h2>Everything in <span class="text-ddpink">one den</span></h2>
-  </div>
-  <div class="features-grid">
-    <div class="feature-card reveal"><div class="feature-icon">🎮</div><h3>Games</h3><p>Homebrew games built for the Xbox 360 — shooters, platformers, fighters, and more.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🕹️</div><h3>Emulators</h3><p>Retro consoles on your 360. NES, SNES, Genesis, N64, and more.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🛠️</div><h3>Utilities</h3><p>Dashboards, tools, patches, and everything you need to keep your 360 running smooth.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🎨</div><h3>Themes</h3><p>Custom dashboard skins to give your console a fresh look.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">📦</div><h3>One-Click Install</h3><p>Downloads install straight to your console. No PC, no USB, no hassle.</p></div>
-    <div class="feature-card reveal"><div class="feature-icon">🔄</div><h3>Auto-Updates</h3><p>The manifest stays fresh. New content lands in your den automatically.</p></div>
+<!-- CINEMATIC ABOUT -->
+<section class="cinematic cinematic-about reveal">
+  <div class="cinematic-content">
+    <span class="section-label">About</span>
+    <h2>Built For The <span class="text-ddpink">Community</span></h2>
+    <p>Digital Den 360 brings the scattered Xbox 360 homebrew scene into one place. Games, emulators, utilities, and themes — curated, tested, and delivered straight to your console.</p>
+    <a href="pages/about.html" class="btn btn-primary">Learn More →</a>
   </div>
 </section>
 
 <!-- HOW IT WORKS -->
-<section class="section reveal" id="how">
+<section class="section reveal">
   <div class="section-head">
     <span class="section-label">How It Works</span>
-    <h2>From <span class="text-ddpink-deep">zero</span> to <span class="text-ddpink">playing</span> in minutes</h2>
+    <h2>From Zero To <span class="text-ddpink">Playing</span></h2>
   </div>
+
   <div class="steps">
-    <div class="step reveal"><div class="step-num">01</div><h3>Add the Manifest</h3><p>Drop the Digital Den 360 manifest URL into your Aurora dashboard.</p></div>
-    <div class="step-arrow">→</div>
-    <div class="step reveal"><div class="step-num">02</div><h3>Launch the Den</h3><p>Open Digital Den 360 from your scripts menu on the console.</p></div>
-    <div class="step-arrow">→</div>
-    <div class="step reveal"><div class="step-num">03</div><h3>Browse & Download</h3><p>Pick your game, emulator, or tool — it installs straight to your console.</p></div>
-    <div class="step-arrow">→</div>
-    <div class="step reveal"><div class="step-num">04</div><h3>Play</h3><p>No PC required. Just pure homebrew on your 360.</p></div>
+    <div class="step reveal">
+      <div class="step-num">01</div>
+      <h3>Add the Manifest</h3>
+      <p>Drop the Digital Den 360 manifest URL into your Aurora dashboard.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">02</div>
+      <h3>Launch the Den</h3>
+      <p>Open Digital Den 360 from your scripts menu on the console.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">03</div>
+      <h3>Browse & Download</h3>
+      <p>Pick your game, emulator, or tool — it installs straight to your console.</p>
+    </div>
+    <div class="step reveal">
+      <div class="step-num">04</div>
+      <h3>Play</h3>
+      <p>No PC required. Just pure homebrew on your 360.</p>
+    </div>
   </div>
 </section>
 
 <!-- COMPATIBILITY -->
-<section class="section reveal" id="compat">
+<section class="section reveal">
   <div class="section-head">
     <span class="section-label">Compatibility</span>
-    <h2>Works with your <span class="text-ddpink">setup</span></h2>
+    <h2>Works With Your <span class="text-ddpink">Setup</span></h2>
   </div>
+
   <div class="compat-preview">
-    <div class="compat-item reveal"><span class="compat-name">RGH 1.2</span><span class="compat-status full">✅ Full</span></div>
-    <div class="compat-item reveal"><span class="compat-name">RGH 3.0</span><span class="compat-status full">✅ Full</span></div>
-    <div class="compat-item reveal"><span class="compat-name">JTAG</span><span class="compat-status full">✅ Full</span></div>
-    <div class="compat-item reveal"><span class="compat-name">BadUpdate</span><span class="compat-status full">✅ Full</span></div>
-    <div class="compat-item reveal"><span class="compat-name">Aurora 0.7b</span><span class="compat-status full">✅ Full</span></div>
-    <div class="compat-item reveal"><span class="compat-name">FreeStyle Dash 3</span><span class="compat-status partial">⚠️ Partial</span></div>
+    <div class="compat-item"><span class="compat-name">RGH 1.2</span><span class="compat-status full">✅ Full</span></div>
+    <div class="compat-item"><span class="compat-name">RGH 3.0</span><span class="compat-status full">✅ Full</span></div>
+    <div class="compat-item"><span class="compat-name">JTAG</span><span class="compat-status full">✅ Full</span></div>
+    <div class="compat-item"><span class="compat-name">BadUpdate</span><span class="compat-status full">✅ Full</span></div>
+    <div class="compat-item"><span class="compat-name">Aurora 0.7b</span><span class="compat-status full">✅ Full</span></div>
+    <div class="compat-item"><span class="compat-name">FreeStyle Dash 3</span><span class="compat-status partial">⚠️ Partial</span></div>
   </div>
+
   <div class="section-cta">
-    <a href="pages/compatibility.html" class="btn btn-ghost">Full Compatibility List →</a>
+    <a href="pages/compatibility.html" class="btn btn-ghost">Full Compatibility →</a>
   </div>
 </section>
 
 <!-- STATS -->
-<section class="section reveal" id="stats">
+<section class="section reveal">
   <div class="section-head">
     <span class="section-label">Community</span>
-    <h2>Join the <span class="text-ddpink">movement</span></h2>
+    <h2>Join The <span class="text-ddpink">Movement</span></h2>
   </div>
+
   <div class="stats-grid">
     <div class="stat-card reveal"><div class="stat-icon">⭐</div><div class="stat-value" id="statStars">—</div><div class="stat-label">Stars</div></div>
     <div class="stat-card reveal"><div class="stat-icon">🍴</div><div class="stat-value" id="statForks">—</div><div class="stat-label">Forks</div></div>
@@ -263,13 +244,15 @@
   </div>
 </section>
 
-<section class="cta-section reveal">
-  <div class="cta-card">
-    <h2>Ready to enter the <span class="text-ddpink">den?</span></h2>
-    <p>Star the repo and be the first to know when Digital Den 360 goes live.</p>
+<!-- CINEMATIC CTA -->
+<section class="cinematic cinematic-cta reveal">
+  <div class="cinematic-content">
+    <span class="section-label">Get Started</span>
+    <h2>Ready To Enter The <span class="text-ddpink">Den?</span></h2>
+    <p>Star the repo and be first to know when Digital Den 360 goes live.</p>
     <div class="cta-buttons">
       <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
-      <a href="pages/pricing.html" class="btn btn-premium">✦ Go Premium</a>
+      <a href="pages/pricing.html" class="btn btn-ghost">See Pricing</a>
     </div>
   </div>
 </section>
@@ -277,7 +260,7 @@
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-brand">
-      <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <div>
         <div class="footer-title"><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></div>
         <p class="footer-tag">Your den. Your games.</p>
@@ -322,4 +305,4 @@
 
 <script src="script.js"></script>
 </body>
-</html>
+                     </html>
