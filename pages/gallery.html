@@ -4,38 +4,28 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Gallery — Digital Den 360</title>
-<meta name="description" content="Screenshots and previews of Digital Den 360 on Xbox 360." />
-<link rel="icon" type="image/jpeg" href="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
+<meta name="description" content="Screenshots and previews of Digital Den 360." />
+<link rel="icon" type="image/png" href="../assets/homefront-xbox-360-17_orig.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
     theme: { extend: {
-      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#1A1A1A' },
-      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+      colors: { ddblack:'#000000', ddpink:'#FF1493', ddpinkBright:'#FF69B4', ddgray:'#181818' },
+      fontFamily: { display:['Anton','Impact','sans-serif'], mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
     }}
   };
 </script>
 <link rel="stylesheet" href="../style.css" />
-<style>
-.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-.gallery-item { aspect-ratio: 16/9; background: linear-gradient(145deg, var(--gray-2), var(--black-2)); border: 1px solid rgba(255, 20, 147, 0.15); border-radius: var(--radius); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; transition: var(--transition); cursor: pointer; position: relative; overflow: hidden; }
-.gallery-item:hover { transform: translateY(-6px); border-color: rgba(255, 20, 147, 0.5); box-shadow: 0 20px 50px rgba(0,0,0,0.5), 0 0 40px var(--pink-glow-soft); }
-.gallery-item .placeholder-icon { font-size: 3rem; opacity: 0.5; filter: drop-shadow(0 0 12px var(--pink-glow)); }
-.gallery-item .placeholder-text { font-family: var(--font-mono); font-size: 0.85rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; }
-</style>
 </head>
 <body class="bg-ddblack text-white font-sans overflow-x-hidden">
-<div class="bg-grid"></div>
-<div class="bg-glow bg-glow-1"></div>
-<div class="bg-glow bg-glow-2"></div>
 
 <nav class="navbar scrolled" id="navbar">
   <div class="nav-container">
     <a href="../index.html" class="nav-logo">
-      <img src="../assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Digital Den 360" />
+      <img src="../assets/homefront-xbox-360-17_orig.png" alt="Digital Den 360" />
       <span><span class="text-ddpink-deep">Digital</span> <span class="text-ddpink">Den 360</span></span>
     </a>
     <ul class="nav-links" id="navLinks">
@@ -47,34 +37,33 @@
       <li><a href="faq.html">FAQ</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <a href="pricing.html" class="nav-cta"><span>Go Premium</span></a>
+    <a href="pricing.html" class="nav-cta">Go Premium</a>
     <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
   </div>
 </nav>
 
-<section class="hero" style="min-height:auto;padding:160px 24px 60px;">
-  <div class="hero-badge"><span class="pulse-dot"></span><span>Screenshots coming soon</span></div>
-  <h1 class="hero-title" style="font-size:clamp(2rem,6vw,4rem);"><span class="text-ddpink-deep">Gal</span><span class="text-ddpink">lery</span></h1>
-  <p class="hero-desc">Screenshots and previews of the den. Drop in real ones once the beta drops.</p>
+<section class="hero" style="min-height:60vh;background-image:url('../assets/1054.jpg');background-size:cover;background-position:center;">
+  <div class="hero-badge"><span class="pulse-dot"></span><span>Screenshots Coming Soon</span></div>
+  <h1 class="hero-title"><span class="text-ddpink-deep">Gal</span><span class="text-ddpink">lery</span></h1>
+  <p class="hero-tagline">See The Den</p>
+  <p class="hero-desc">Screenshots and previews. Drop in real ones once the beta drops.</p>
 </section>
 
-<section class="section reveal">
-  <div class="gallery-grid">
-    <div class="gallery-item reveal"><div class="placeholder-icon">🖼️</div><div class="placeholder-text">Den Home</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">🎮</div><div class="placeholder-text">Games Catalog</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">🕹️</div><div class="placeholder-text">Emulators</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">📥</div><div class="placeholder-text">Download Screen</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">🎨</div><div class="placeholder-text">Themes</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">✦</div><div class="placeholder-text">Premium Section</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">⚙️</div><div class="placeholder-text">Settings</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">👑</div><div class="placeholder-text">Founder Badge</div></div>
-    <div class="gallery-item reveal"><div class="placeholder-icon">💗</div><div class="placeholder-text">Supporter Drops</div></div>
-  </div>
+<section class="tile-grid">
+  <div class="tile tile-games"><h3>Store Home</h3><p>Browse the den from your console.</p></div>
+  <div class="tile tile-emulators"><h3>Games Catalog</h3><p>Browse every homebrew game.</p></div>
+  <div class="tile tile-themes"><h3>Download Screen</h3><p>One-click installs straight to your 360.</p></div>
 </section>
 
-<section class="section reveal">
+<section class="tile-grid">
+  <div class="tile tile-emulators"><h3>Emulators</h3><p>Retro consoles on your 360.</p></div>
+  <div class="tile tile-themes"><h3>Premium Section</h3><p>Exclusive content for members.</p></div>
+  <div class="tile tile-games"><h3>Settings</h3><p>Configure your den experience.</p></div>
+</section>
+
+<section class="cta-section reveal">
   <div class="cta-card">
-    <h2>Want to see it <span class="text-ddpink">in action?</span></h2>
+    <h2>Want To See It <span class="text-ddpink">In Action?</span></h2>
     <p>Star the repo and get notified when beta screenshots drop.</p>
     <div class="cta-buttons">
       <a href="https://github.com/Frosty-Dev-Xbox/Digital-Den-360" target="_blank" class="btn btn-primary">⭐ Star on GitHub</a>
