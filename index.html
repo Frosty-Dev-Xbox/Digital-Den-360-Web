@@ -5,61 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Jail X360 — The Homebrew Store for Jailbroken Xbox 360s</title>
 <meta name="description" content="Jail X360 is the homebrew store for jailbroken Xbox 360 consoles. Download games, emulators, utilities, and themes directly to your console. RGH | JTAG | BadUpdate." />
-<meta name="theme-color" content="#0A0A0A" />
-
-<!-- Open Graph -->
+<meta name="theme-color" content="#000000" />
 <meta property="og:title" content="Jail X360 — Break free. Play more." />
 <meta property="og:description" content="The homebrew store for jailbroken Xbox 360s. Games, emulators, utilities — all in one place." />
 <meta property="og:image" content="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
 <meta property="og:type" content="website" />
-
-<!-- Favicon -->
 <link rel="icon" type="image/jpeg" href="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" />
-
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
-<!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          jailblack: '#0A0A0A',
-          jailgreen: '#107C10',
-          jailorange: '#FF6B00',
-          jailgray: '#1A1A1A',
-        },
-        fontFamily: {
-          mono: ['"Fira Code"', 'monospace'],
-          sans: ['Inter', 'sans-serif'],
-        },
-      },
-    },
+    theme: { extend: {
+      colors: { jailblack:'#000000', jailgreen:'#107C10', jailorange:'#FF6B00', jailgray:'#1A1A1A' },
+      fontFamily: { mono:['"Fira Code"','monospace'], sans:['Inter','sans-serif'] },
+    }}
   };
 </script>
-
 <link rel="stylesheet" href="style.css" />
 </head>
-
 <body class="bg-jailblack text-white font-sans overflow-x-hidden">
 
-<!-- ═══════════════ ANIMATED BACKGROUND ═══════════════ -->
 <div class="bg-grid"></div>
 <div class="bg-glow bg-glow-1"></div>
 <div class="bg-glow bg-glow-2"></div>
 
-<!-- ═══════════════ NAVBAR ═══════════════ -->
 <nav class="navbar" id="navbar">
   <div class="nav-container">
     <a href="index.html" class="nav-logo">
       <img src="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg" alt="Jail X360" />
       <span><span class="text-jailgreen">Jail</span> <span class="text-jailorange">X360</span></span>
     </a>
-
     <ul class="nav-links" id="navLinks">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="pages/features.html">Features</a></li>
@@ -69,19 +46,16 @@
       <li><a href="pages/faq.html">FAQ</a></li>
       <li><a href="pages/contact.html">Contact</a></li>
     </ul>
-
     <a href="pages/downloads.html" class="nav-cta">
       <span>Coming Soon</span>
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
-
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- ═══════════════ HERO ═══════════════ -->
 <section class="hero">
   <div class="hero-badge">
     <span class="pulse-dot"></span>
@@ -129,7 +103,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ STATUS STRIP ═══════════════ -->
 <section class="status-strip reveal">
   <div class="status-item">
     <div class="status-dot text-jailgreen"></div>
@@ -140,8 +113,8 @@
     <span><strong class="text-jailgreen">JTAG</strong> Supported</span>
   </div>
   <div class="status-item">
-    <div class="status-dot text-jailorange"></div>
-    <span><strong class="text-jailorange">BadUpdate</strong> Partial</span>
+    <div class="status-dot text-jailgreen"></div>
+    <span><strong class="text-jailgreen">BadUpdate</strong> Supported</span>
   </div>
   <div class="status-item">
     <div class="status-dot text-jailgreen"></div>
@@ -149,7 +122,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ NOT LIVE YET ═══════════════ -->
 <section class="notlive reveal">
   <div class="notlive-card">
     <div class="notlive-icon">⚠️</div>
@@ -164,7 +136,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ FEATURES ═══════════════ -->
 <section class="section reveal" id="features">
   <div class="section-head">
     <span class="section-label">Features</span>
@@ -178,31 +149,26 @@
       <h3>Games</h3>
       <p>Homebrew games built for the Xbox 360 — shooters, platformers, fighters, and more.</p>
     </div>
-
     <div class="feature-card reveal">
       <div class="feature-icon">🕹️</div>
       <h3>Emulators</h3>
       <p>Retro consoles on your 360. NES, SNES, Genesis, N64, and more.</p>
     </div>
-
     <div class="feature-card reveal">
       <div class="feature-icon">🛠️</div>
       <h3>Utilities</h3>
       <p>Dashboards, tools, patches, and everything you need to keep your 360 running smooth.</p>
     </div>
-
     <div class="feature-card reveal">
       <div class="feature-icon">🎨</div>
       <h3>Themes</h3>
       <p>Custom dashboard skins to give your console a fresh look.</p>
     </div>
-
     <div class="feature-card reveal">
       <div class="feature-icon">📦</div>
       <h3>One-Click Install</h3>
       <p>Downloads install straight to your console. No PC, no USB, no hassle.</p>
     </div>
-
     <div class="feature-card reveal">
       <div class="feature-icon">🔄</div>
       <h3>Auto-Updates</h3>
@@ -211,7 +177,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ HOW IT WORKS ═══════════════ -->
 <section class="section reveal" id="how">
   <div class="section-head">
     <span class="section-label">How It Works</span>
@@ -245,11 +210,10 @@
   </div>
 </section>
 
-<!-- ═══════════════ ROADMAP PREVIEW ═══════════════ -->
 <section class="section reveal" id="roadmap">
   <div class="section-head">
     <span class="section-label">Roadmap</span>
-    <h2>The road to <span class="text-jailorange">launch</span></h2>
+    <h2>The road to <span class="text-jailgreen">launch</span></h2>
   </div>
 
   <div class="roadmap-preview">
@@ -278,7 +242,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ COMPATIBILITY PREVIEW ═══════════════ -->
 <section class="section reveal" id="compat">
   <div class="section-head">
     <span class="section-label">Compatibility</span>
@@ -300,7 +263,7 @@
     </div>
     <div class="compat-item reveal">
       <span class="compat-name">BadUpdate</span>
-      <span class="compat-status partial">⚠️ Partial</span>
+      <span class="compat-status full">✅ Full</span>
     </div>
     <div class="compat-item reveal">
       <span class="compat-name">Aurora 0.7b</span>
@@ -317,7 +280,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ GITHUB STATS ═══════════════ -->
 <section class="section reveal" id="stats">
   <div class="section-head">
     <span class="section-label">Community</span>
@@ -348,7 +310,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ CTA ═══════════════ -->
 <section class="cta-section reveal">
   <div class="cta-card">
     <h2>Ready to <span class="text-jailgreen">break free?</span></h2>
@@ -364,7 +325,6 @@
   </div>
 </section>
 
-<!-- ═══════════════ FOOTER ═══════════════ -->
 <footer class="footer">
   <div class="footer-container">
     <div class="footer-brand">
@@ -408,4 +368,4 @@
 
 <script src="script.js"></script>
 </body>
-                                                                            </html>
+  </html>
