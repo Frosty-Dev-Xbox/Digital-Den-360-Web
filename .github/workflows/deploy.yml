@@ -1,56 +1,25 @@
-name: Deploy Jail X360 Web to GitHub Pages
+name: Deploy Digital Den 360 Web to GitHub Pages
 
 on:
-  # Runs on every push to main
   push:
     branches: [ main ]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # ─────────── BUILD JOB ───────────
   build:
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
-
-      - name: 🔍 Verify required files exist
-        run: |
-          echo "Checking project structure..."
-          test -f index.html         || (echo "❌ Missing index.html"        && exit 1)
-          test -f style.css          || (echo "❌ Missing style.css"         && exit 1)
-          test -f script.js          || (echo "❌ Missing script.js"         && exit 1)
-          test -d pages              || (echo "❌ Missing pages/ folder"     && exit 1)
-          test -d assets             || (echo "❌ Missing assets/ folder"    && exit 1)
-          echo "✅ All required files present."
-
-      - name: 🖼️ Verify logo exists
-        run: |
-          LOGO="assets/gemini-image-2_Professional_graphic_design_3D_render_make_me_a_logo_for_my_xbox_360_Store_calle-0.jpg"
-          if [ -f "$LOGO" ]; then
-            echo "✅ Logo found: $LOGO"
-          else
-            echo "⚠️  Logo not found at expected path. Site will still deploy."
-          fi
-
-      - name: 📄 List pages
-        run: |
-          echo "Pages detected:"
-          ls -1 pages/*.html 2>/dev/null || echo "No pages found."
 
       - name: ⚙️ Setup Pages
         uses: actions/configure-pages@v5
@@ -58,14 +27,9 @@ jobs:
       - name: 📦 Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload the entire repo root (index.html + pages/ + assets/)
           path: '.'
 
-  # ─────────── DEPLOY JOB ───────────
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
