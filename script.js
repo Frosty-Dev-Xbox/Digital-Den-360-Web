@@ -4,10 +4,7 @@
    ═══════════════════════════════════════════════════════════ */
 
 const CONFIG = {
-  github: {
-    user: 'Frosty-Dev-Xbox',
-    repo: 'Digital-Den-360',
-  },
+  github: { user: 'Frosty-Dev-Xbox', repo: 'Digital-Den-360' },
   typing: {
     phrases: [
       'The homebrew den for jailbroken 360s...',
@@ -17,9 +14,7 @@ const CONFIG = {
       'Your den. Your games.',
       'Made by Frosty-Dev-Xbox.',
     ],
-    typeSpeed: 55,
-    deleteSpeed: 30,
-    pauseTime: 1600,
+    typeSpeed: 55, deleteSpeed: 30, pauseTime: 1600,
   },
 };
 
@@ -47,7 +42,7 @@ const CONFIG = {
   }
 })();
 
-/* 2. TYPING EFFECT */
+/* 2. TYPING */
 (function initTyping() {
   const el = document.getElementById('typingText');
   if (!el) return;
@@ -58,10 +53,7 @@ const CONFIG = {
     if (!deleting) {
       el.textContent = current.substring(0, charIndex + 1);
       charIndex++;
-      if (charIndex === current.length) {
-        deleting = true;
-        return setTimeout(tick, pauseTime);
-      }
+      if (charIndex === current.length) { deleting = true; return setTimeout(tick, pauseTime); }
       return setTimeout(tick, typeSpeed);
     } else {
       el.textContent = current.substring(0, charIndex - 1);
@@ -77,7 +69,7 @@ const CONFIG = {
   setTimeout(tick, 600);
 })();
 
-/* 3. SCROLL REVEAL */
+/* 3. REVEAL */
 (function initReveal() {
   const items = document.querySelectorAll('.reveal');
   if (!items.length) return;
@@ -108,26 +100,22 @@ const CONFIG = {
     issues: document.getElementById('statIssues'),
   };
   if (!els.stars && !els.forks && !els.watchers && !els.issues) return;
-
   function animateNumber(el, target) {
     if (!el) return;
     const duration = 1200;
     const start = performance.now();
-    const from = 0;
     function step(now) {
       const progress = Math.min((now - start) / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      const value = Math.floor(from + (target - from) * eased);
-      el.textContent = value.toLocaleString();
+      el.textContent = Math.floor(target * eased).toLocaleString();
       if (progress < 1) requestAnimationFrame(step);
       else el.textContent = target.toLocaleString();
     }
     requestAnimationFrame(step);
   }
-
   try {
     const res = await fetch(`https://api.github.com/repos/${user}/${repo}`);
-    if (!res.ok) throw new Error('GitHub API failed');
+    if (!res.ok) throw new Error('API failed');
     const data = await res.json();
     animateNumber(els.stars, data.stargazers_count || 0);
     animateNumber(els.forks, data.forks_count || 0);
@@ -139,7 +127,7 @@ const CONFIG = {
   }
 })();
 
-/* 5. FAQ ACCORDION */
+/* 5. FAQ */
 (function initFAQ() {
   const items = document.querySelectorAll('.faq-item');
   if (!items.length) return;
@@ -163,51 +151,29 @@ const CONFIG = {
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const offset = 90;
-      const top = target.getBoundingClientRect().top + window.scrollY - offset;
+      const top = target.getBoundingClientRect().top + window.scrollY - 90;
       window.scrollTo({ top, behavior: 'smooth' });
     });
   });
 })();
 
-/* 7. PARALLAX GLOWS */
-(function initParallax() {
-  const glow1 = document.querySelector('.bg-glow-1');
-  const glow2 = document.querySelector('.bg-glow-2');
-  if (!glow1 && !glow2) return;
+/* 7. PARALLAX HERO */
+(function initHeroParallax() {
+  const hero = document.querySelector('.hero');
+  if (!hero) return;
   let ticking = false;
   window.addEventListener('scroll', () => {
     if (ticking) return;
     ticking = true;
     requestAnimationFrame(() => {
       const y = window.scrollY;
-      if (glow1) glow1.style.transform = `translate3d(0, ${y * 0.15}px, 0)`;
-      if (glow2) glow2.style.transform = `translate3d(0, ${y * -0.1}px, 0)`;
+      hero.style.setProperty('--hero-scroll', `${y * 0.3}px`);
       ticking = false;
     });
   });
 })();
 
-/* 8. HERO LOGO TILT */
-(function initLogoTilt() {
-  const logo = document.querySelector('.hero-logo');
-  if (!logo) return;
-  if (window.matchMedia('(hover: none)').matches) return;
-  const wrap = logo.parentElement;
-  wrap.addEventListener('mousemove', (e) => {
-    const rect = wrap.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width - 0.5;
-    const y = (e.clientY - rect.top) / rect.height - 0.5;
-    const rotX = y * -12;
-    const rotY = x * 12;
-    logo.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) scale(1.04)`;
-  });
-  wrap.addEventListener('mouseleave', () => {
-    logo.style.transform = 'perspective(800px) rotateX(0) rotateY(0) scale(1)';
-  });
-})();
-
-/* 9. ACTIVE NAV LINK */
+/* 8. ACTIVE NAV */
 (function initActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
   const links = document.querySelectorAll('.nav-links a');
@@ -220,7 +186,7 @@ const CONFIG = {
   });
 })();
 
-/* 10. EASTER EGG */
+/* 9. EASTER EGG */
 (function easterEgg() {
   const style = 'color:#FF1493;font-weight:800;font-size:14px;';
   const pink = 'color:#FF69B4;font-weight:800;font-size:14px;';
